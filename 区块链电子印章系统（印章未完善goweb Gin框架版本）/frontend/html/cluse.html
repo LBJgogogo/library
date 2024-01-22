@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>汉堡皇用户注册协议</title>
+	<link rel="stylesheet" href="../css/qt.css">
+    <style>
+        .logo{
+            position: fixed;
+            background-color: #333;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            opacity: 0.6;
+        }
+        .zck{
+            position: fixed;
+            height: 545px;
+            width: 947px;
+            top: 10px;
+            left: 197px;
+            background-color: white;
+			margin-left: 80px;
+			margin-top: 70px;
+        }
+        .sm{
+            background-color: lightgrey;
+            height: 31px;
+        }
+        .ok{
+        font-size: 25px;
+        background-color: red;
+        margin-left: 200px;
+        margin-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        cursor: pointer;/*鼠标碰到就变小手*/
+        }
+        .jb{
+            font-size: 25px;
+            background-color: red;
+            margin-left: 250px;
+            margin-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<ul class="bg-squares">
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+</ul>
+<div style=" position: relative;" class="logo">
+    <div class="zck">
+        <div class="sm">
+            <div style="font-weight: bold;padding-top: 5px;padding-left: 7px;color: black;float: left;z-index: 5;">用户注册条款</div>
+    </div>
+    <div style="height: 30px;"></div>
+    <div style="background-color: saddlebrown;height: 374px;width: 897px;border:0px;margin: auto;">
+<textarea disabled style="width: 897px;height: 374px;">
+用户注册协议
+。。。。。。。。。。。。。。。
+。。。。。。。。。。。。。。。
+第1条 本站服务条款的确认和接纳
+1.1 .....
+1.2 .....
+1.3 .....
+1.4 .....
+第2条 本站服务
+2.1......
+2.2......
+2.3......
+第3条 用户信息
+3.1......
+3.2......
+3.3......
+第4条 用户依法言行义务
+4.1......
+4.2......
+4.3......
+4.4......
+4.5......
+第5条 印章信息
+5.1......
+5.2......
+5.3......
+5.4......
+5.5......
+</textarea>
+    </div>
+    <div  style="position: relative;height: 110px;width: 947px;position: fixed;">
+            <button  id="btn" onclick="fh()" class="ok">
+                同意并继续
+            </button>
+            <button  id="btn1" onclick="fh1()"  class="jb">
+                返回
+            </button>
+    </div>
+</div>
+</div>
+</body>
+<script>
+    function fh(){
+        // sessionStorage.setItem("abc","666")//session添加数据临时存储   local
+        //     window.location.href = "javascript:self.location=document.referrer" //返回并刷新
+        // 跳转上一页javascript:history.back(-1)
+		window.location.href = './register.html?'+'uname='+'zhanzhi'
+        }
+		
+        function fh1(){
+            window.location.href="javascript:history.back(-1)"//跳转上一页
+        }
+</script>
+</html>
